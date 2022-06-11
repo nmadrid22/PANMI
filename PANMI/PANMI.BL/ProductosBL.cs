@@ -49,6 +49,7 @@ namespace PANMI.BL
             public void EliminarProducto (int id)
         {
             var producto = _contexto.Productos.Find(id);
+
             _contexto.Productos.Remove(producto);
             _contexto.SaveChanges();
 
